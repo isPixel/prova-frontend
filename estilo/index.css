@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 1px 5px rgb(183, 178, 178);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#logo{
+    width: 270px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    width: 50px;
+    height: 50px;
+}
+
+#logo h1 {
+  
+        font-family: "Lacquer", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+
+nav{
+   height: 100px;
+   width: auto;     
+   display: flex;
+   flex-direction: row;
+   margin-left: auto;
+   margin-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+}
+
+nav ul{
+    height: 100%;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#menu_hamburguer{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 600px) {
+    #menu_hamburguer{
+        display: flex;
+    }
+}
+
+#div_hamburguer{
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburguer{
+    position: relative;
+    margin-block: 4px;
+    border-radius: 2px;
+    width: 40px;
+    height: 4px;
+    background-color: black;
+    content: '';
+}
+
+
+#destaques {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#destaques h1{
+    font-family: "Lacquer", system-ui;
+}
+
+#container-destaques {
+    width: 100%;
+    padding-inline: 40px;
+    padding-block: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box-destaques{
+    position: relative;
+    width: 300px;
+    border: 1px solid black;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 5px rgb(107, 107, 107);
+    margin-inline: 15px;
+    margin-block: 20px;
+}
+/* @media screen and (max-width: 740px){
+    .box-destaques{
+        flex-wrap: ;
+    }
+} */
+
+
+@media screen and (max-width: 600px) {
+    #container-destaques {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-destaques{
+        width: 90%;
+    }
+
+    .box-destaques img {
+        max-height: 200px;
+
+    }
+}
+
+.box-destaques img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.box-destaques h2 {
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.box-destaques p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#box-destaques-dthora {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(48, 49, 48);
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.box-destaques button{
+    position: absolute;
+    width: calc(100% - 50px);
+    margin-inline: 20px;
+    margin-top: auto;
+    margin-bottom: 20px;
+    bottom: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+}
+
+footer h1{
+     font-family: "Lacquer", system-ui;
+}
+
+
+footer ul {
+    margin-block: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer ul li {
+    list-style: none;
+}
+
+
+#direitos {
+    width: 100%;
+    height: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: rgb(202, 200, 200);
+}
